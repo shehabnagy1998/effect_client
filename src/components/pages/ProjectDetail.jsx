@@ -1,12 +1,10 @@
 import Axios from "axios";
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { API } from "../../CONST";
 import BannerTitle from "../layouts/about/banner/BannerTitle";
 import { Header, Footer, TopBar, BottomBar } from "../layouts/general/index";
-import { ContentProject, RelateProject, Sidebar } from "../layouts/project";
 import Swiper from "swiper/bundle";
-import bootstrap from "bootstrap";
 
 const ProjectDetail = () => {
   const [defaultState, setDefault] = useState({

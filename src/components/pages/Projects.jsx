@@ -1,5 +1,5 @@
 import Axios from "axios";
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { API } from "../../CONST";
 import BannerTitle from "../layouts/about/banner/BannerTitle";
@@ -52,9 +52,7 @@ const Projects = () => {
     console.log(res.data);
   };
   useEffect(() => {
-    // window.location.reload();
     fetcher();
-    return () => setCategory({});
   }, [id]);
   return (
     <div className="header-fixed page no-sidebar header-style-2 topbar-style-1 menu-has-search">

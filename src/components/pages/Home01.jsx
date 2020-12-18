@@ -1,17 +1,11 @@
-import React, { Component, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import {
   Slider,
   TitleHeading,
   IconBox,
   About,
-  Service,
   Project,
-  ServicesBox,
   Testimonial,
-  Overview,
-  Faq,
-  Partner,
 } from "../layouts/home01/index";
 import { Header, Footer, TopBar, BottomBar } from "../layouts/general/index";
 import Axios from "axios";
@@ -81,7 +75,7 @@ const Home01 = () => {
 
   useEffect(() => {
     let reloaded = localStorage.getItem("ifRloaded");
-    if (reloaded == "false") {
+    if (reloaded === "false") {
       localStorage.setItem("ifRloaded", true);
       window.location.reload();
     } else {
