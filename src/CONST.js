@@ -1,6 +1,6 @@
 import * as $ from "jquery";
 
-export const API = "http://localhost:3000";
+export const API = "https://effect-backend.vercel.app";
 
 export var themesflatTheme = {
   // PreLoader
