@@ -6,19 +6,12 @@ import ProjectDetail from "./components/pages/ProjectDetail";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path={"/"} component={Home}></Route>
-        <Route path="/category/:id" component={Projects}></Route>
-        <Route path="/project/:id" component={ProjectDetail}></Route>
-        <Redirect to="/" />
-      </Switch>
-      {/* {
-        routes.map((data,idx) => (
-          <Route exact path={data.path} component={data.component} key={idx}></Route>
-        ))
-      } */}
-    </BrowserRouter>
+    <Switch>
+      <Route exact path={"/"} component={Home}></Route>
+      <Route path="/category/:id" component={Projects}></Route>
+      <Route path="/project/:catId/:id" component={ProjectDetail}></Route>
+      <Redirect to="/" />
+    </Switch>
   );
 }
 

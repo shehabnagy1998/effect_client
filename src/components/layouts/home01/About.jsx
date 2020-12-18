@@ -34,17 +34,11 @@ class About extends Component {
     return (
       <div className="row-about" id="about-section">
         <div className="container-fluid">
-          <div className="row equalize sm-equalize-auto">
+          <div className="row equalize sm-equalize-auto ">
             <div className="col-md-6 half-background style-1" />
-            <div className="col-md-6 bg-light-grey">
+            <div className="col-md-6 bg-light-grey  py-5">
               <div
-                className="themesflat-spacer clearfix"
-                data-desktop={64}
-                data-mobile={60}
-                data-smobile={60}
-              />
-              <div
-                className="themesflat-content-box clearfix"
+                className="themesflat-content-box clearfix  py-5"
                 data-margin="0 25% 0 4.5%"
                 data-mobilemargin="0 0 0 4.5%"
               >

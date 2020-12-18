@@ -25,7 +25,7 @@ class Header extends Component {
                     alt="Autora"
                     width={186}
                     height={39}
-                    data-retina="assets/img/logo-small@2x.png"
+                    data-retina="/assets/img/logo-small@2x.png"
                     data-width={186}
                     data-height={39}
                   />
@@ -54,7 +54,7 @@ class Header extends Component {
                     className={"menu-item menu-item-has-children"}
                     key={data.id}
                   >
-                    <a href={`#${data.target}`}>{data.name}</a>
+                    <a href={`/#${data.target}`}>{data.name}</a>
                     {/* <ul className="sub-menu">
                       {data.namesub.map((submenu) => (
                         <li
@@ -81,7 +81,7 @@ class Header extends Component {
                 {/* </ul> */}
               </Scrollspy>
             </nav>
-            <div id="header-search">
+            {/* <div id="header-search">
               <Link to="#" className="header-search-icon">
                 <span className="search-icon fa fa-search"></span>
               </Link>
@@ -107,7 +107,7 @@ class Header extends Component {
                   <i className="fa fa-search" />
                 </button>
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>
