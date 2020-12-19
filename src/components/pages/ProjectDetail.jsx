@@ -51,6 +51,7 @@ const ProjectDetail = () => {
       ],
     });
   };
+
   useEffect(() => {
     fetcher();
   }, [id, catId]);
@@ -60,6 +61,7 @@ const ProjectDetail = () => {
       spaceBetween: 10,
       slidesPerView: 4,
       freeMode: true,
+
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
     });
@@ -69,6 +71,8 @@ const ProjectDetail = () => {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      allowSlideNext: true,
+      allowSlidePrev: true,
       thumbs: {
         swiper: galleryThumbs,
       },

@@ -22,7 +22,12 @@ const Testimonial = () => {
     var swiper = new Swiper("#test-swiper", {
       slidesPerView: 1,
       autoplay: true,
-
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

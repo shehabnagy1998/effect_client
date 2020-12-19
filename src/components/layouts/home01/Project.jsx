@@ -6,12 +6,32 @@ import Swiper from "swiper/bundle";
 const Project = ({ categories }) => {
   useEffect(() => {
     var swiper = new Swiper("#projects-swiper", {
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 30,
       autoplay: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+        1300: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
       },
     });
   }, [categories]);
@@ -26,7 +46,7 @@ const Project = ({ categories }) => {
       data-auto="false"
     >
       <div className="position-relative py-5">
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-prev z-100"></div>
         <div
           class="swiper-container"
           id="projects-swiper"
